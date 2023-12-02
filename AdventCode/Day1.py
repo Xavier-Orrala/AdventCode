@@ -17,14 +17,11 @@ def getValue():
            x += 1
            if num.isdigit() == True:
                  values = values + num
-                 #print("h",num)
-                 # For loop, goes through key array, checks if there are keywords in the num array
            else:
                for i in range(0,len(key)):
                    length = int(len(key[i]))
                    if(line[x:length+x] == key[i]):
                        values = values + str(i)
-                       #print("x",num)
        if len(values) > 2:
            first,second = values[0], values[-1]
            values = first + second
